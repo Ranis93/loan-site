@@ -7,7 +7,9 @@ export default class Slider {
                     animate = false, 
                     autoplay = false} = {}) {    // default  - значения во избежания ошибок, если какой то элемент забыли передать .
         this.container = document.querySelector(container);           // селектор передан методом деструктуризации .
-        this.slides = this.container.children;
+        try {
+            this.slides = this.container.children;
+        } catch (e) {}
         this.btns = document.querySelectorAll(btns); 
         this.next = document.querySelector(next);
         this.prev = document.querySelector(prev);
