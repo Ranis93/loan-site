@@ -5134,8 +5134,8 @@ window.addEventListener('DOMContentLoaded', function () {
   new _modules_download__WEBPACK_IMPORTED_MODULE_7__["default"]('.download').init();
   document.querySelectorAll('.open_module_page').forEach(function (item) {
     item.addEventListener('click', function (event) {
-      event.preventDefault();
-      window.location.href = '/modules.html';
+      //event.preventDefault();
+      document.location.href = 'https://ranis93.github.io/loan-site/modules.html'; // modules.html
     });
   });
 });
