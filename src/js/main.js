@@ -55,7 +55,7 @@ window.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.open_module_page').forEach(item => {
         item.addEventListener('click', (event) => {
             event.preventDefault();
-            window.location.href = '/modules.html';
+            window.location.href = 'https://ranis93.github.io/loan-site/modules.html';   // modules.html
         });
     });
 });
